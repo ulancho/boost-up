@@ -1,0 +1,10 @@
+.headerTop {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 150px;
+}
+
+.headerBottom img{
+    width: 100%;
+    text-align: center;
+}

@@ -1,0 +1,39 @@
+body {
+    background-color: #FFFBF4;
+    height: 100vh;
+}
+
+.btn {
+    border-radius: 32px;
+    background:#FF7F01;
+    padding: 11px 52px;
+    color: #FFFFFF;
+    border: none;
+}
+
+h2 {
+    color: #2B2B2B;
+    text-align: center;
+    font-size: 40px;
+    font-family: Unbounded;
+    font-weight: 700;
+}
+
+p, button{
+    color: var(--unnamed, #2B2B2B);
+    font-size: 20px;
+    font-family: Raleway;
+}
+
+.fw-6{
+    font-weight: 600;
+}
+
+.orange-color {
+    color: #FF7F01;
+}
+
+.center-container {
+    padding: 164px 180px 0;
+}
+
