@@ -1,15 +1,24 @@
 import React from "react";
-import programmers from '../assets/programmers.png'
+import { directionsData } from "../constants/directionsData";
+
+
+
 
 
 const DirectionsCard = () => {
     return (
         <>
+        {directionsData.map((data) => (
             <div className="directions-card">
-                <img src={programmers} alt="" />
-                <p className="title">Программисты</p>
-                <p className="subtitle">Java, Python, SQL, FrontEnd - у нас есть проекты, которые ждут вашего вклада. Вы получите возможность погрузиться в реальные задачи, применить и углубить свои знания, работая рука об руку с опытными менторами.</p>
+                <img src={data.img} alt="" />
+                <div className="direction-text-container">
+                     <p className="title">{data.title}</p>
+                <p className="subtitle">{data.desc}</p>
+                </div>
+               
             </div>
+        ))}
+            
         </>
     )
 }

@@ -4,7 +4,22 @@
     padding: 20px 150px;
 }
 
-.headerBottom img{
+.communityPeople{
     width: 100%;
     text-align: center;
+}
+
+.stickers{
+    width: 62px;
+    height: 62px;
+}
+
+.headerBottom{
+    position: relative;
+}
+
+.rocket{
+    position: absolute;
+    top: 146px;
+    left: 135px;
 }

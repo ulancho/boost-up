@@ -1,7 +1,8 @@
 import React from "react";
 import styles from "../styles/Header.module.css";
 import logo from '../assets/logo.svg';
-import communityPeople from '../assets/communityPeople.png'
+import communityPeople from '../assets/communityPeople.png';
+import rocket from '../assets/rocket.png';
 
 
 const Header = () => {
@@ -18,6 +19,7 @@ const Header = () => {
                 <div className={styles.headerBottom}>
                     <div className="center-container">
                         <div>
+                            <img className={`${styles.stickers} ${styles.rocket}`} src={rocket} alt="rocket" />
                             <h2>Начните свой <span className="orange-color"> профессиональный путь в IT </span>
                                 с <span className="orange-color"> Boost Up </span>  - Вашим ускорителем развития!
                             </h2>
@@ -29,7 +31,7 @@ const Header = () => {
                             </p>
                         </div>
                     </div>
-                    <img src={communityPeople} alt="logo" />
+                    <img className={styles.communityPeople} src={communityPeople} alt="logo" />
                 </div>
             </header>
         </>

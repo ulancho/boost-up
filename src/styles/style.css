@@ -3,7 +3,7 @@ body {
     height: 100vh;
 }
 
-.pt-25{
+.pt-25 {
     padding-top: 25px;
 }
 
@@ -41,7 +41,6 @@ button {
     color: #2B2B2B;
     font-size: 18px;
     font-weight: 400;
-    padding: 0 12px;
 }
 
 .fw-6 {
@@ -69,6 +68,7 @@ button {
 .wrapper {
     width: 664px;
     padding-left: 46px;
+    margin-right: 104px;
 }
 
 .orange-color {
@@ -76,10 +76,11 @@ button {
 }
 
 .center-container {
+    position: relative;
     padding: 164px 180px 0;
 }
 
-.center-wrapper{
+.center-wrapper {
     display: flex;
     justify-content: center;
 }
@@ -87,12 +88,20 @@ button {
 .directions-card {
     display: flex;
     width: 367px;
-    padding: 0px 0px 37px 1px;
+    padding-bottom: 37px;
     flex-direction: column;
-    align-items: center;
     border-radius: 20px;
     background-color: #FCFCFC;
     box-shadow: 0 2px 11px rgba(0, 0, 0, 0.2);
     margin: 0 10px;
+}
 
+.target-sticker {
+    position: absolute;
+    top: 114px;
+    right: 124px;
+}
+
+.direction-text-container {
+    padding-left: 10px;
 }
