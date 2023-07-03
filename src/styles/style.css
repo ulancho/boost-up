@@ -98,7 +98,9 @@ ul{
 
 .center-container {
     position: relative;
-    padding: 164px 180px 0;
+    padding: 164px 0 0;
+    max-width: 1140px;
+    margin: 0 auto;
 }
 
 .center-wrapper {
