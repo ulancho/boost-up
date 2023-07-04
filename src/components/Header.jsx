@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from '../styles/Header.module.css';
 import logo from '../assets/logo.svg';
-import communityPeople from '../assets/communityPeople.png';
-import rocket from '../assets/rocket.png';
+import communityPeople from '../assets/communityPeople.svg';
+import rocket2 from '../assets/rocket.svg';
 
 const Header = () => {
     return (
@@ -19,7 +19,7 @@ const Header = () => {
                     <div>
                         <img
                             className={`${styles.stickers} ${styles.rocket}`}
-                            src={rocket}
+                            src={rocket2}
                             alt="rocket"
                         />
                         <h2>

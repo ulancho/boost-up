@@ -1,6 +1,6 @@
-import programmers from '../assets/programmers.png';
-import designers from '../assets/designers.png';
-import managers from '../assets/managers.png';
+import programmers from '../assets/programmers.svg';
+import designers from '../assets/designers.svg';
+import managers from '../assets/managers.svg';
 
 
 

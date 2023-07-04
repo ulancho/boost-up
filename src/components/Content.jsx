@@ -1,14 +1,14 @@
-import React from "react";
-import AboutInternship from "./AboutInternship";
-import Directions from "./Directions";
+import React from 'react';
+import AboutInternship from './AboutInternship';
+import Directions from './Directions';
 
 const Content = () => {
     return (
-     <>
-     <Directions/>
-     <AboutInternship/>
-     </>
-    )
-}
+        <>
+            <Directions />
+            <AboutInternship />
+        </>
+    );
+};
 
 export default Content;

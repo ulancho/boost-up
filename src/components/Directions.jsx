@@ -1,6 +1,5 @@
 import React from 'react';
-import programmers from '../assets/programmers.png';
-import target from '../assets/target.png';
+import target from '../assets/target.svg';
 import DirectionsCard from './DirectionsCard';
 
 const Directions = () => {
@@ -17,7 +16,7 @@ const Directions = () => {
                     </p>
                 </div>
             </div>
-            <div className="center-wrapper">
+            <div className="center-wrapper pt-39">
                 <DirectionsCard />
             </div>
         </div>
