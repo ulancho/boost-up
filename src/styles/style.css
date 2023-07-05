@@ -55,6 +55,7 @@ ul {
 
 .white-font {
     color: #FCFCFC;
+    margin: 8px 0;
 }
 
 .title {
@@ -164,9 +165,24 @@ footer .logo {
 
 @media screen and (max-width: 767.98px) {
 
-    header button {
-        visibility: hidden;
+    .pt-25 {
+        padding-left: 25px;
+    }
 
+    .pt-20 {
+        padding-top: 0;
+    }
+
+    .pl-60 {
+        padding-left: 60px;
+    }
+
+    .fw-5 {
+        font-weight: 500;
+    }
+
+    header button {
+        display: none;
     }
 
     .center-container {
@@ -176,12 +192,22 @@ footer .logo {
 
     .center-wrapper {
         flex-wrap: wrap;
+        position: relative;
     }
 
     .wrapper {
         width: 360px;
         margin: 0;
         padding: 0;
+        order: 2;
+    }
+
+    .img-container {
+        order: 1;
+    }
+
+    .img-container img {
+        width: 360px;
     }
 
     .target-sticker {
@@ -199,6 +225,41 @@ footer .logo {
 
     p {
         font-size: 17px;
+    }
+
+    .btn {
+        border-radius: 10px;
+        background: var(--unnamed, #FF7F01);
+        padding: 15px 49px;
+        font-size: 25px;
+        font-family: Unbounded;
+        font-weight: 500;
+    }
+
+    footer {
+        padding: 32px 20px 21px;
+        justify-content: flex-start;
+    }
+
+
+    footer div {
+
+        padding: 10px 20px;
+    }
+
+    .block {
+        width: 100%;
+        text-align: center;
+    }
+
+    .social-media-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100px;
+    }
+
+    .social-media-wrapper img {
+        padding: 10px 0;
     }
 
 }

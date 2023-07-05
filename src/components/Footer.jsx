@@ -9,8 +9,10 @@ const Footer = () => {
     return (
         <>
             <footer>
-                <img className="logo" src={logo} alt="logo" />
                 <div>
+                    <img className="logo" src={logo} alt="logo" />
+                </div>
+                <div className="pl-60">
                     <ul>
                         <li>
                             <a className="white-font fw-7" href="#">
@@ -44,7 +46,7 @@ const Footer = () => {
                         </li>
                     </ul>
                 </div>
-                <div className="pt-20">
+                <div className="pt-20 social-media-wrapper">
                     <a
                         href="https://www.instagram.com/booster.school_/"
                         className="icon-link"
@@ -61,8 +63,8 @@ const Footer = () => {
                         <img src={telegramIcon} alt="" />
                     </a>
                 </div>
-                <div>
-                    <p className="white-font fw-7">
+                <div className="block">
+                    <p className="white-font fw-7 ">
                         ©2023 Booster  UP <br />
                         IT school in Bishkek
                     </p>

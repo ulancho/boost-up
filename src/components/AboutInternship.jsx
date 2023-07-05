@@ -7,7 +7,9 @@ const AboutInternship = () => {
             <div className="center-container">
                 <h2 className="text-left orange-color"> Стажировка в BoostUp - </h2>
                 <div className="center-wrapper">
-                    <img src={internship} alt="" />
+                    <div className="img-container">
+                        <img src={internship} alt="стажировка" />
+                    </div>
                     <div className="text-right">
                         <div className="wrapper">
                             <p>
@@ -16,7 +18,7 @@ const AboutInternship = () => {
                                 тонкостях работы в IT изнутри и сделать первый важный шаг в вашей
                                 карьере.
                             </p>
-                            <h2 className=" fs-25">
+                            <h2 className=" fs-25 fw-5">
                                 Присоединяйтесь к нам и ускорьте свое развитие в IT с BoostUp!{' '}
                             </h2>
                             <div className="pt-25">
