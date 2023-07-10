@@ -9,6 +9,14 @@ body {
     margin: 0;
 }
 
+.mr-20 {
+    margin-right: 20px;
+}
+
+.pt-12 {
+    padding-top: 12px;
+}
+
 .pt-25 {
     padding-top: 25px;
 }
@@ -21,20 +29,22 @@ body {
     padding-top: 39px;
 }
 
-.btn {
-    border-radius: 32px;
-    background: #FF7F01;
-    padding: 11px 52px;
-    color: #FFFFFF;
-    border: none;
-}
-
 h2 {
     color: #2B2B2B;
     font-size: 40px;
     font-family: Unbounded;
     font-weight: 700;
     margin: 0;
+}
+
+h4 {
+    color: #2B2B2B;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 68px;
 }
 
 p,
@@ -53,9 +63,28 @@ ul {
     list-style: none;
 }
 
+.gray-font {
+    color: #666;
+}
+
 .white-font {
     color: #FCFCFC;
     margin: 8px 0;
+}
+
+.btn {
+    border-radius: 32px;
+    background: #FF7F01;
+    padding: 11px 52px;
+    color: #FFFFFF;
+    border: none;
+}
+
+.gray-btn {
+    background-color: rgba(102, 102, 102, 0.35);
+    color: #fff;
+    width: 100%;
+    margin-top: 19px;
 }
 
 .title {
@@ -69,6 +98,15 @@ ul {
     color: #2B2B2B;
     font-size: 18px;
     font-weight: 400;
+}
+
+.fw-3 {
+    font-weight: 300;
+}
+
+.fw-5 {
+    font-weight: 500;
+    /* !!!!!!добавила для десктоп !!!!!! */
 }
 
 .fw-6 {
@@ -87,9 +125,19 @@ ul {
     font-size: 25px;
 }
 
+.fs-16 {
+    font-size: 16px;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
 .text-left {
     display: flex;
     justify-content: left;
+    align-items: center;
+    /* !!!!!!!добавила align!!!!!!!!! */
 }
 
 .text-right {
@@ -117,6 +165,7 @@ ul {
 .center-wrapper {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .directions-card {
@@ -163,6 +212,106 @@ footer .logo {
     height: 78.503px;
 }
 
+.max-width570 {
+    max-width: 570px;
+}
+
+.text-align-center {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.text-align-left {
+    text-align: left;
+}
+
+.circle {
+    display: inline-block;
+    width: 20px;
+    border-radius: 50%;
+    background-color: rgba(102, 102, 102, 0.35);
+    margin-right: 10px;
+    color: #FCFCFC;
+    font-family: Raleway;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 2px 0;
+}
+
+.width-24 {
+    width: 24px;
+    padding: 4px 0;
+    background-color: #FF7F01;
+}
+
+.dash {
+    display: inline-block;
+    width: 39%;
+    height: 1px;
+    background-color: rgba(102, 102, 102, 0.35);
+    margin: 14px 2px;
+}
+
+.login-form {
+    margin-top: 56px;
+    padding: 24px;
+    background-color: #fff;
+    max-width: 43%;
+    border-radius: 24px;
+}
+
+.form-group {
+    margin-top: 24px;
+}
+
+.form-group label {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+}
+
+.form-group p {
+    font-size: 14px;
+    margin: 0;
+    padding-bottom: 11px;
+}
+
+.form-group input {
+    padding: 18px 0;
+    border-radius: 12px;
+    border: 1px solid rgba(102, 102, 102, 0.35);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.width190 {
+    width: 31% !important;
+}
+
+.width300 {
+    width: 315px;
+}
+
+select {
+    padding: 18px 0;
+    border-radius: 12px;
+    border: 1px solid rgba(102, 102, 102, 0.35);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.login-container {
+    margin: 90px 0;
+}
+
+.mt-0 {
+    margin-top: 0;
+}
+
+.ml-0 {
+    margin-left: 0;
+}
+
 @media screen and (max-width: 767.98px) {
 
     .pt-25 {
@@ -195,11 +344,21 @@ footer .logo {
         position: relative;
     }
 
+
     .wrapper {
         width: 360px;
         margin: 0;
         padding: 0;
         order: 2;
+    }
+
+    .width190 {
+        width: 100% !important;
+        margin-right: 20px;
+    }
+
+    .wrap-items {
+        flex-wrap: wrap;
     }
 
     .img-container {
@@ -214,8 +373,11 @@ footer .logo {
         visibility: hidden;
     }
 
-    .directions-card h2,
-    p {
+    .directions-card h2 {
+        margin: 10px 10px;
+    }
+
+    .directions-card p {
         margin: 10px 10px;
     }
 
