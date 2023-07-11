@@ -19,8 +19,7 @@ const AboutInternship = () => {
                                 карьере.
                             </p>
                             <h2 className=" fs-25 fw-5 mt-30">
-                                Присоединяйтесь к нам и ускорьте свое развитие <br /> в IT с
-                                BoostUp!{' '}
+                                Присоединяйтесь к нам и ускорьте свое развитие в IT с BoostUp!{' '}
                             </h2>
                             <div className="pt-25">
                                 <button className="btn ">Регистрация</button>
