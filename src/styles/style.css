@@ -181,6 +181,12 @@ footer .logo {
         padding-left: 60px;
     }
 
+
+    .mt-30 {
+        margin-top: 30px;
+
+    }
+
     .fw-5 {
         font-weight: 500;
     }
@@ -192,6 +198,7 @@ footer .logo {
     .center-container {
         max-width: 351px;
         padding-top: 49px;
+        margin: 0 12px;
     }
 
     .center-wrapper {
