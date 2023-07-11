@@ -10,7 +10,7 @@ const Header = () => {
             <div className={styles.headerTop}>
                 <img src={logo} alt="logo" />
                 <div>
-                    <button className="btn">Регистрация test</button>
+                    <button className="btn">Регистрация</button>
                 </div>
             </div>
 
