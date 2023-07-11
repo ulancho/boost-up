@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/boost-up/static/css/main.e5c23ea1.css",
-    "main.js": "/boost-up/static/js/main.a7667dfe.js",
+    "main.css": "/boost-up/static/css/main.3284a7c9.css",
+    "main.js": "/boost-up/static/js/main.17174768.js",
     "static/media/managers.svg": "/boost-up/static/media/managers.fa076cd837a53acf5c38b8455ebe5cc5.svg",
     "static/media/programmers.svg": "/boost-up/static/media/programmers.ed6bdb87b5965da72a1d4422b5edc043.svg",
     "static/media/designers.svg": "/boost-up/static/media/designers.a66bbdaa414645f263d63de64da9c225.svg",
@@ -16,11 +16,11 @@
     "static/media/telegramIcon.svg": "/boost-up/static/media/telegramIcon.bdbeec20a827e4366db31e411b74aabb.svg",
     "static/media/messageIcon.svg": "/boost-up/static/media/messageIcon.7fa3e2cf2b8536fed703433d79ddcb5e.svg",
     "index.html": "/boost-up/index.html",
-    "main.e5c23ea1.css.map": "/boost-up/static/css/main.e5c23ea1.css.map",
-    "main.a7667dfe.js.map": "/boost-up/static/js/main.a7667dfe.js.map"
+    "main.3284a7c9.css.map": "/boost-up/static/css/main.3284a7c9.css.map",
+    "main.17174768.js.map": "/boost-up/static/js/main.17174768.js.map"
   },
   "entrypoints": [
-    "static/css/main.e5c23ea1.css",
-    "static/js/main.a7667dfe.js"
+    "static/css/main.3284a7c9.css",
+    "static/js/main.17174768.js"
   ]
 }
