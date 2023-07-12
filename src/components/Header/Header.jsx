@@ -1,8 +1,9 @@
 import React from 'react';
 import styles from './Header.module.css';
 import logo from '../../assets/logo.svg';
+import { ReactComponent as CommunityPeople } from '../../assets/communityPeople.svg';
 import communityPeople from '../../assets/communityPeople.svg';
-import rocket2 from '../../assets/rocket.svg';
+import { ReactComponent as Rocket2 } from '../../assets/rocket.svg';
 
 const Header = () => {
     return (
@@ -14,11 +15,7 @@ const Header = () => {
 
             <div className={`main-center-container ${styles.headerBottom}`}>
                 <div className={styles.titleBox}>
-                    <img
-                        className={`${styles.stickers} ${styles.rocket}`}
-                        src={rocket2}
-                        alt="rocket"
-                    />
+                    <Rocket2 className={`${styles.rocket}`} />
                     <h2>
                         Начните свой{' '}
                         <span className="orange-color"> профессиональный путь в IT </span>с{' '}
@@ -34,7 +31,14 @@ const Header = () => {
                     </p>
                 </div>
             </div>
-            <img className={styles.communityPeople} src={communityPeople} alt="communityPeople" />
+            <CommunityPeople
+                className={`${styles.communityPeople} ${styles.communityPeopleMobile}`}
+            />
+            <img
+                className={`${styles.communityPeople} ${styles.communityPeopleDesktop}`}
+                src={communityPeople}
+                alt="communityPeople"
+            />
         </header>
     );
 };
