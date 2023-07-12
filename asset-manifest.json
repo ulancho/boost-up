@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/boost-up/static/css/main.3284a7c9.css",
-    "main.js": "/boost-up/static/js/main.17174768.js",
-    "static/media/managers.svg": "/boost-up/static/media/managers.fa076cd837a53acf5c38b8455ebe5cc5.svg",
-    "static/media/programmers.svg": "/boost-up/static/media/programmers.ed6bdb87b5965da72a1d4422b5edc043.svg",
-    "static/media/designers.svg": "/boost-up/static/media/designers.a66bbdaa414645f263d63de64da9c225.svg",
-    "static/media/internship.svg": "/boost-up/static/media/internship.726a60e4f2ed4708388cdf5b02763c69.svg",
-    "static/media/communityPeople.svg": "/boost-up/static/media/communityPeople.062d8affb5f490bcf84d3ff0bd5259d5.svg",
-    "static/media/target.svg": "/boost-up/static/media/target.b0a17050bfcc4b319af19de832cf741d.svg",
-    "static/media/rocket.svg": "/boost-up/static/media/rocket.d7239ce5d4b2cc2ce1f92d1d7cb25919.svg",
-    "static/media/logo.svg": "/boost-up/static/media/logo.a37630d4828e4125ebaf7e01dcda359b.svg",
-    "static/media/logoWhiteText.svg": "/boost-up/static/media/logoWhiteText.a829331425014f25fdfa5e25b3419c6b.svg",
-    "static/media/instagramIcon.svg": "/boost-up/static/media/instagramIcon.a73374e4e1a32c66b9ea98efb46c179e.svg",
-    "static/media/whatsappIcon.svg": "/boost-up/static/media/whatsappIcon.117c74b9da4af2f54fabad6b0dffbcad.svg",
-    "static/media/telegramIcon.svg": "/boost-up/static/media/telegramIcon.bdbeec20a827e4366db31e411b74aabb.svg",
-    "static/media/messageIcon.svg": "/boost-up/static/media/messageIcon.7fa3e2cf2b8536fed703433d79ddcb5e.svg",
+    "main.css": "/boost-up/static/css/main.e77e053a.css",
+    "main.js": "/boost-up/static/js/main.de46d4e7.js",
+    "static/media/managers.svg": "/boost-up/static/media/managers.01d4f23a9600aa08222597cc4d87b006.svg",
+    "static/media/programmers.svg": "/boost-up/static/media/programmers.136fb1680612dddde19e4da17f4a7ec5.svg",
+    "static/media/designers.svg": "/boost-up/static/media/designers.082cb3899d80a6fc86bef3236bd55b2a.svg",
+    "static/media/internship.svg": "/boost-up/static/media/internship.9ef2dfc565342d2f03d351f25a81fb83.svg",
+    "static/media/communityPeople.svg": "/boost-up/static/media/communityPeople.3ae2b44411e44570c8980eb86a973756.svg",
+    "static/media/target.svg": "/boost-up/static/media/target.9a29258cc1387674c6a5488758e1a9a7.svg",
+    "static/media/rocket.svg": "/boost-up/static/media/rocket.68c8343ee3fff6afcac271f13687e570.svg",
+    "static/media/logo.svg": "/boost-up/static/media/logo.6b42e2b662f21e78803aca0f7cb29f22.svg",
+    "static/media/logoWhiteText.svg": "/boost-up/static/media/logoWhiteText.ae62d9611657067343632a57fbd77e84.svg",
+    "static/media/instagramIcon.svg": "/boost-up/static/media/instagramIcon.34a4779b5d1038fd949a15dfdeb7c512.svg",
+    "static/media/whatsappIcon.svg": "/boost-up/static/media/whatsappIcon.bfeb37b105ccb47a62e9ffa9ce7bc0e6.svg",
+    "static/media/telegramIcon.svg": "/boost-up/static/media/telegramIcon.2b048533297e1cae5b6e74bb40316723.svg",
+    "static/media/messageIcon.svg": "/boost-up/static/media/messageIcon.9b27a3ef55361d15c69409eb66e446d5.svg",
     "index.html": "/boost-up/index.html",
-    "main.3284a7c9.css.map": "/boost-up/static/css/main.3284a7c9.css.map",
-    "main.17174768.js.map": "/boost-up/static/js/main.17174768.js.map"
+    "main.e77e053a.css.map": "/boost-up/static/css/main.e77e053a.css.map",
+    "main.de46d4e7.js.map": "/boost-up/static/js/main.de46d4e7.js.map"
   },
   "entrypoints": [
-    "static/css/main.3284a7c9.css",
-    "static/js/main.17174768.js"
+    "static/css/main.e77e053a.css",
+    "static/js/main.de46d4e7.js"
   ]
 }
