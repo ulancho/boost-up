@@ -34,14 +34,17 @@
 
 @media screen and (max-width: 767.98px) {
     .headerTop {
-        padding: 30px 0px;
+        padding-top: 30px!important;
+    }
+
+    .headerBottom{
+        margin-top: 84px!important;
     }
 
     .rocket {
-        position: absolute;
-        top: 15px;
-        left: 283px;
+        top: -30px!important;
+        right: 0;
+        left: unset;
         transform: scaleX(-1);
-
     }
 }
