@@ -1,21 +1,21 @@
 .headerTop {
     display: flex;
     justify-content: space-between;
-    padding: 20px 150px;
+    align-items: center;
+    padding-top: 14px;
 }
 
-.communityPeople {
-    width: 100%;
-    text-align: center;
+.headerBottom {
+    position: relative;
+    padding-top: 164px;
+}
+
+.titleBox{
 }
 
 .stickers {
     width: 62px;
     height: 62px;
-}
-
-.headerBottom {
-    position: relative;
 }
 
 .rocket {
@@ -24,13 +24,17 @@
     left: -47px;
 }
 
+.subtitleBox{
+}
+
+.communityPeople {
+    width: 100%;
+    text-align: center;
+}
+
 @media screen and (max-width: 767.98px) {
     .headerTop {
-        padding: 57px 20px;
-    }
-
-    .headerBottom div {
-        max-width: 320px;
+        padding: 30px 0px;
     }
 
     .rocket {

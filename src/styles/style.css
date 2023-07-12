@@ -29,6 +29,10 @@ body {
     border: none;
 }
 
+.btn:hover{
+    cursor: pointer;
+}
+
 h2 {
     color: #2B2B2B;
     font-size: 40px;
@@ -40,7 +44,7 @@ h2 {
 p,
 a,
 button {
-    color: var(--unnamed, #2B2B2B);
+    color: #2B2B2B;
     font-size: 20px;
     font-family: Raleway;
 }
@@ -59,7 +63,7 @@ ul {
 }
 
 .title {
-    color: var(--unnamed, #FF7F01);
+    color: #FF7F01;
     font-size: 20px;
     font-family: Unbounded;
     font-weight: 500;
@@ -105,6 +109,11 @@ ul {
 
 .orange-color {
     color: #FF7F01;
+}
+
+.main-center-container{
+    max-width: 1140px;
+    margin: 0 auto;
 }
 
 .center-container {
@@ -240,7 +249,7 @@ footer .logo {
 
     .btn {
         border-radius: 10px;
-        background: var(--unnamed, #FF7F01);
+        background: #FF7F01;
         padding: 15px 49px;
         font-size: 25px;
         font-family: Unbounded;
