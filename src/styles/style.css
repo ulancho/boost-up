@@ -29,12 +29,24 @@ body {
     padding-top: 39px;
 }
 
+.mt-0 {
+    margin-top: 0;
+}
+
+.ml-0 {
+    margin-left: 0;
+}
+
 .mt-240 {
     margin-top: 240px !important;
 }
 
 .mt-30 {
     margin-top: 30px;
+}
+
+.mt-70 {
+    margin-top: 70px;
 }
 
 .mb-8 {
@@ -69,7 +81,8 @@ h4 {
 
 p,
 a,
-button {
+button,
+label {
     color: var(--unnamed, #2B2B2B);
     font-size: 20px;
     font-family: Raleway;
@@ -98,6 +111,14 @@ ul {
     padding: 11px 52px;
     color: #FFFFFF;
     border: none;
+}
+
+.btn-transparent {
+    background-color: transparent;
+    border: 1px solid var(--unnamed, #2B2B2B);
+    color: black;
+    font-weight: 500;
+    padding: 17px 45px !important;
 }
 
 .btn-size-17-102 {
@@ -253,6 +274,10 @@ footer .logo {
     text-align: center;
 }
 
+.margin-center {
+    margin: 0 auto;
+}
+
 .text-align-left {
     text-align: left;
 }
@@ -336,14 +361,6 @@ select {
     margin: 90px 0;
 }
 
-.mt-0 {
-    margin-top: 0;
-}
-
-.ml-0 {
-    margin-left: 0;
-}
-
 .header-logo {
     margin: 16px 0 0 123px;
     max-width: 100%;
@@ -357,6 +374,57 @@ select {
     border-radius: 24px;
     box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.12);
 }
+
+.test-card {
+    background-color: #fff;
+    border-radius: 40px;
+    background: var(--unnamed, #FCFCFC);
+    box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.12);
+    width: 78%;
+    padding: 40px 250px 40px 40px;
+}
+
+.test-card label {
+    font-weight: 600;
+    padding-left: 15px;
+}
+
+.test-card input {
+    border-radius: 10px;
+    border: 1px solid var(--unnamed, #2B2B2B);
+    width: 20px;
+    height: 20px;
+}
+
+.ellipse-widget {
+    margin: 0 5px;
+    display: flex;
+    padding: 2px 30px;
+    border-radius: 20px;
+    background: rgba(102, 102, 102, 0.20);
+    color: #666;
+    font-size: 13px;
+    font-weight: 700;
+    border: none;
+    display: inline-block;
+}
+
+.e-w-orange {
+    background-color: #FF7F01;
+    color: #fff;
+}
+
+.test-container {
+    position: relative;
+    width: 83%;
+}
+
+.timer {
+    position: absolute;
+    right: 0px;
+    top: -20px;
+}
+
 
 @media screen and (max-width: 767.98px) {
 
