@@ -63,19 +63,6 @@ ul {
     margin: 8px 0;
 }
 
-.title {
-    color: #FF7F01;
-    font-size: 20px;
-    font-family: Unbounded;
-    font-weight: 500;
-}
-
-.subtitle {
-    color: #2B2B2B;
-    font-size: 18px;
-    font-weight: 400;
-}
-
 .fw-6 {
     font-weight: 600;
 }
@@ -127,32 +114,6 @@ ul {
 .center-wrapper {
     display: flex;
     justify-content: center;
-}
-
-.directions-card {
-    display: flex;
-    width: 367px;
-    margin: 15px 10px 15px;
-    padding-bottom: 37px;
-    flex-direction: column;
-    border-radius: 20px;
-    background-color: #FCFCFC;
-    box-shadow: 0 2px 11px rgba(0, 0, 0, 0.2);
-}
-
-.directions-card h2,
-p {
-    margin: 20px 10px;
-}
-
-.target-sticker {
-    position: absolute;
-    top: 114px;
-    right: -44px;
-}
-
-.direction-text-container {
-    padding-left: 10px;
 }
 
 footer {

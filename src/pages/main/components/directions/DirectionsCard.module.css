@@ -1,0 +1,30 @@
+.directionsCard {
+    display: flex;
+    width: 366px;
+    padding-bottom: 37px;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: #FCFCFC;
+    box-shadow: 0 2px 11px rgba(0, 0, 0, 0.2);
+}
+
+.directionsCard h2, .directionsCard p {
+    margin: 20px 10px;
+}
+
+.directionTextContainer {
+    padding-left: 10px;
+}
+
+.title {
+    color: #FF7F01;
+    font-size: 20px;
+    font-family: Unbounded;
+    font-weight: 500;
+}
+
+.subtitle {
+    color: #2B2B2B;
+    font-size: 18px;
+    font-weight: 400;
+}

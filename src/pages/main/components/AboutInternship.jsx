@@ -1,5 +1,5 @@
 import React from 'react';
-import internship from '../assets/internship.svg';
+import internship from '../../../assets/internship.svg';
 
 const AboutInternship = () => {
     return (

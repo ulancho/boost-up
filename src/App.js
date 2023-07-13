@@ -1,17 +1,9 @@
 import React from 'react';
-import Content from './components/Content';
-import Footer from './components/Footer';
-import Header from './components/Header/Header';
 import './styles/style.css';
+import MainPage from './pages/main/MainPage';
 
 const App = () => {
-    return (
-        <>
-            <Header />
-            {/*<Content />*/}
-            {/*<Footer />*/}
-        </>
-    );
+    return <MainPage />;
 };
 
 export default App;

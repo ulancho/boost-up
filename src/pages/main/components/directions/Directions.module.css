@@ -1,0 +1,26 @@
+.direction{
+    margin-top: 106px;
+    position: relative;
+}
+
+.targetSticker {
+    position: absolute;
+    top: -50px;
+    right: -44px;
+}
+
+.directionCardContainer{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 39px;
+    border: 1px solid blue;
+}
+
+.special{
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 10px;
+}
