@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './Header.module.css';
 import logo from '../../assets/logo.svg';
-import { ReactComponent as CommunityPeople } from '../../assets/communityPeople.svg';
-import communityPeople from '../../assets/communityPeople.svg';
+import communityPeopleSvg from '../../assets/communityPeople.svg';
+import communityPeopleJpg from '../../assets/communityPeople.jpg';
 import { ReactComponent as Rocket2 } from '../../assets/rocket.svg';
 
 const Header = () => {
@@ -12,7 +12,6 @@ const Header = () => {
                 <img src={logo} alt="logo" />
                 <button className="btn">Регистрация</button>
             </div>
-
             <div className={`main-center-container ${styles.headerBottom}`}>
                 <div className={styles.titleBox}>
                     <Rocket2 className={`${styles.rocket}`} />
@@ -31,12 +30,14 @@ const Header = () => {
                     </p>
                 </div>
             </div>
-            <CommunityPeople
+            <img
                 className={`${styles.communityPeople} ${styles.communityPeopleMobile}`}
+                src={communityPeopleJpg}
+                alt="communityPeople"
             />
             <img
                 className={`${styles.communityPeople} ${styles.communityPeopleDesktop}`}
-                src={communityPeople}
+                src={communityPeopleSvg}
                 alt="communityPeople"
             />
         </header>
