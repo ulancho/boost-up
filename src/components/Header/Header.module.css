@@ -39,6 +39,7 @@
 
     .headerBottom{
         margin-top: 84px!important;
+        padding-top: unset;
     }
 
     .rocket {
