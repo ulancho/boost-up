@@ -1,6 +1,6 @@
 .directionsCard {
     display: flex;
-    width: 366px;
+    max-width: 366px;
     padding-bottom: 37px;
     flex-direction: column;
     border-radius: 20px;
@@ -8,12 +8,10 @@
     box-shadow: 0 2px 11px rgba(0, 0, 0, 0.2);
 }
 
-.directionsCard h2, .directionsCard p {
-    margin: 20px 10px;
-}
-
-.directionTextContainer {
+.directionTextContainer{
+    padding-top: 20px;
     padding-left: 10px;
+    padding-right: 10px;
 }
 
 .title {
@@ -21,10 +19,21 @@
     font-size: 20px;
     font-family: Unbounded;
     font-weight: 500;
+    margin-bottom: 15px;
 }
 
 .subtitle {
     color: #2B2B2B;
     font-size: 18px;
     font-weight: 400;
+}
+
+@media screen and (max-width: 767.98px) {
+    .title {
+        font-size: 17px;
+    }
+
+    .subtitle {
+        font-size: 17px;
+    }
 }
