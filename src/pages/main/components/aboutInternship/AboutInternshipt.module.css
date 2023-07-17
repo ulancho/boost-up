@@ -11,6 +11,9 @@
 .subtitle{
     margin-top: 25px;
 }
+.internshipDesktop{
+    margin-bottom: -4px;
+}
 
 .internshipMobile{
     display: none;
