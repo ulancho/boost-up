@@ -1,5 +1,5 @@
 import React from 'react';
-import AboutInternship from './AboutInternship';
+import AboutInternship from './aboutInternship/AboutInternship';
 import Directions from './directions/Directions';
 
 const Content = () => {
