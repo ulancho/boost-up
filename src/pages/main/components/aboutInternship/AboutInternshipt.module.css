@@ -1,5 +1,4 @@
 .aboutInternship{
-    border: 1px solid red;
     margin-top: 130px;
 }
 
@@ -7,4 +6,27 @@
     color:#2B2B2B;
     font-size: 18px;
     font-weight: 500;
+}
+
+.subtitle{
+    margin-top: 25px;
+}
+
+.internshipMobile{
+    display: none;
+}
+
+@media screen and (max-width: 767.98px) {
+    .aboutInternship{
+        margin-top: 67px;
+    }
+
+    .internshipDesktop{
+        display: none;
+    }
+
+    .internshipMobile{
+        display: block;
+        margin-top: 40px;
+    }
 }
