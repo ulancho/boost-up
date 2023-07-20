@@ -25,7 +25,7 @@ const MainTestPage = () => {
                         </div>
 
                         <div className="mt-30">
-                            <input type="checkbox" name="vehicle2" />
+                            <input type="checkbox" name="firstOption" />
                             <label for="vehicle2">
                                 У вас есть план. Зададите первому продавцу три вопроса: откуда
                                 абрикосы, какой сорт, сладкие ли. Если продавец не сможет ответить
