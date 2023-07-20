@@ -1,21 +1,22 @@
 import React from 'react';
 import SimpleHeader from './SimpleHeader';
 import timer from '../../assets/Timer.svg';
+import styles from '../../styles/MainTestPage.module.css';
 
 const MainTestPage = () => {
     return (
         <>
             <div className="one-page">
                 <SimpleHeader />
-                <div className="text-align-left margin-center test-container">
+                <div className={`${styles.test_container} text-align-left margin-center`}>
                     <h2 className="fw-5 fs-25">
                         Вечер пятницы. Пришли друзья и предлагают посмотреть <br /> фильм. Ваша
                         очередь выбирать. Что включите?
                     </h2>
                     <img className="timer" src={timer} alt="" />
 
-                    <form className="test-card mt-30">
-                        <div className=" text-align-left">
+                    <form className={`${styles.test_card} mt-30`}>
+                        <div className={`${styles.test_questions_wrap} text-align-left`}>
                             <input type="checkbox" name="vehicle1" />
                             <label for="vehicle1">
                                 Обойдете всех и оцените, где меньше испорченных фруктов, какой
@@ -24,7 +25,7 @@ const MainTestPage = () => {
                             </label>
                         </div>
 
-                        <div className="mt-30">
+                        <div className={`${styles.test_questions_wrap} mt-30`}>
                             <input type="checkbox" name="firstOption" />
                             <label for="vehicle2">
                                 У вас есть план. Зададите первому продавцу три вопроса: откуда
@@ -32,7 +33,7 @@ const MainTestPage = () => {
                                 хотя бы на один, перейдете к следующей палатке.
                             </label>
                         </div>
-                        <div className="mt-30">
+                        <div className={`${styles.test_questions_wrap} mt-30`}>
                             <input type="checkbox" name="vehicle3" />
                             <label for="vehicle3">
                                 {' '}
@@ -40,7 +41,7 @@ const MainTestPage = () => {
                                 красивые горки.
                             </label>
                         </div>
-                        <div className="mt-30">
+                        <div className={`${styles.test_questions_wrap} mt-30`}>
                             <input type="checkbox" name="vehicle3" />
                             <label for="vehicle3">
                                 {' '}
@@ -49,27 +50,41 @@ const MainTestPage = () => {
                             </label>
                         </div>
                     </form>
-                    <div className="mt-30">
-                        <button className="ellipse-widget e-w-orange">1</button>{' '}
-                        <button className="ellipse-widget">2</button>{' '}
-                        <button className="ellipse-widget">3</button>{' '}
-                        <button className="ellipse-widget">4</button>{' '}
-                        <button className="ellipse-widget">5</button>{' '}
-                        <button className="ellipse-widget">6</button>{' '}
-                        <button className="ellipse-widget">7</button>{' '}
-                        <button className="ellipse-widget">8</button>{' '}
-                        <button className="ellipse-widget">9</button>{' '}
-                        <button className="ellipse-widget">10</button>{' '}
-                        <button className="ellipse-widget">11</button>{' '}
-                        <button className="ellipse-widget">12</button>{' '}
-                        <button className="ellipse-widget">13</button>{' '}
-                        <button className="ellipse-widget">14</button>{' '}
-                        <button className="ellipse-widget">15</button>{' '}
-                    </div>
-                    <div className="mt-70 text-right">
-                        <button className="btn btn-transparent mr-20 ">Назад </button>
-                        <button className="btn btn-size-17-102">Далее</button>
-                    </div>
+                </div>
+                <div className={styles.widget_wrapper}>
+                    <button className={`${styles['ellipse_widget']} ${styles['e_w_orange']}`}>
+                        1
+                    </button>
+                    <button className={styles.ellipse_widget}>2</button>{' '}
+                    <button className={styles.ellipse_widget}>3</button>{' '}
+                    <button className={styles.ellipse_widget}>4</button>{' '}
+                    <button className={styles.ellipse_widget}>5</button>{' '}
+                    <button className={styles.ellipse_widget}>6</button>{' '}
+                    <button className={styles.ellipse_widget}>7</button>{' '}
+                    <button className={styles.ellipse_widget}>8</button>{' '}
+                    <button className={styles.ellipse_widget}>9</button>{' '}
+                    <button className={`${styles.ellipse_widget_24} ${styles.ellipse_widget}`}>
+                        10
+                    </button>
+                    <button className={`${styles.ellipse_widget_24} ${styles.ellipse_widget}`}>
+                        11
+                    </button>{' '}
+                    <button className={`${styles.ellipse_widget_24} ${styles.ellipse_widget}`}>
+                        12
+                    </button>{' '}
+                    <button className={`${styles.ellipse_widget_24} ${styles.ellipse_widget}`}>
+                        13
+                    </button>{' '}
+                    <button className={`${styles.ellipse_widget_24} ${styles.ellipse_widget}`}>
+                        14
+                    </button>{' '}
+                    <button className={`${styles.ellipse_widget_24} ${styles.ellipse_widget}`}>
+                        15
+                    </button>{' '}
+                </div>
+                <div className="mt-70 text-right">
+                    <button className="btn btn-transparent mr-20 ">Назад </button>
+                    <button className="btn btn-size-17-102">Далее</button>
                 </div>
             </div>
         </>
