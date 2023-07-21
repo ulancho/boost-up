@@ -386,6 +386,14 @@ select {
 
 @media screen and (max-width: 767.98px) {
 
+    .mt-240 {
+        margin-top: 0 !important;
+    }
+
+    .mt-150 {
+        margin-top: 150px !important;
+    }
+
     .pt-25 {
         padding-left: 25px;
     }
@@ -498,6 +506,14 @@ select {
 
     .timer {
         top: -167px;
+    }
+
+    .align-to-height {
+        display: flex;
+        align-items: center;
+        height: 50vh;
+        justify-content: center;
+
     }
 
 }
