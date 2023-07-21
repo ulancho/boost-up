@@ -45,6 +45,10 @@ body {
     margin-top: 240px !important;
 }
 
+.mr-107 {
+    margin-right: 107px;
+}
+
 .mt-30 {
     margin-top: 30px;
 }
@@ -375,6 +379,10 @@ select {
 
 
 @media screen and (max-width: 767.98px) {
+
+    .mr-107 {
+        margin-right: 0;
+    }
 
     .mt-240 {
         margin-top: 0 !important;

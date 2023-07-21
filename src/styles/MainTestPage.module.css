@@ -54,8 +54,20 @@
 
 @media screen and (max-width: 767.98px) {
 
+    .fs_14 {
+        font-size: 14px !important;
+    }
+
+    .mt_20 {
+        margin-top: 20px !important;
+    }
+
+    .mt_40 {
+        margin-top: 40px;
+    }
+
     .test_card {
-        width: 100%;
+        width: 96%;
         padding: 20px 9px;
     }
 
@@ -75,7 +87,6 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        order: 2;
     }
 
     .ellipse_widget_24 {
@@ -95,7 +106,6 @@
         justify-content: center;
         flex-wrap: wrap;
         margin: 0;
-        order: 1;
     }
 
     .btn_17_102 {
@@ -104,7 +114,15 @@
     }
 
     .container_for_order_reverse {
-        display: flex;
+        margin-top: 40px;
+        display: grid;
     }
 
+    .order1 {
+        order: 1;
+    }
+
+    .order2 {
+        order: 2;
+    }
 }

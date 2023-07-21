@@ -13,7 +13,7 @@ import MainTestPage from "./components/TestPages/MainTestPage";
 const App = () => {
   return (
     <>
-     <TestResults/>
+     <MainTestPage/>
     </>
   )
 }
