@@ -496,5 +496,8 @@ select {
         padding: 10px 0;
     }
 
+    .timer {
+        top: -167px;
+    }
 
 }

@@ -43,9 +43,6 @@
     display: inline-block;
 }
 
-
-
-
 .e_w_orange {
     background-color: #FF7F01;
     color: #fff;
@@ -72,16 +69,13 @@
         font-size: 15px;
     }
 
-    .timer {
-        top: -167px;
-    }
-
     .widget_wrapper {
         margin: 40px 0;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
+        order: 2;
     }
 
     .ellipse_widget_24 {
@@ -93,7 +87,24 @@
     .ellipse_widget {
         padding: 2px 26px;
         margin: 6px;
-
-
     }
+
+    .center_container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0;
+        order: 1;
+    }
+
+    .btn_17_102 {
+        margin: 0 0 16px;
+        padding: 17px 102px !important;
+    }
+
+    .container_for_order_reverse {
+        display: flex;
+    }
+
 }
