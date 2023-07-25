@@ -9,6 +9,18 @@ body {
     overflow-x: hidden;
 }
 
+.mr-20 {
+    margin-right: 20px;
+}
+
+.mt-0 {
+    margin-top: 0;
+}
+
+.pt-12 {
+    padding-top: 12px;
+}
+
 .pt-25 {
     padding-top: 25px;
 }
@@ -29,7 +41,7 @@ body {
     border: none;
 }
 
-.btn:hover{
+.btn:hover {
     cursor: pointer;
 }
 
@@ -62,6 +74,18 @@ ul {
     margin: 8px 0;
 }
 
+.fw-3 {
+    font-weight: 300;
+}
+
+.fw-4 {
+    font-weight: 400;
+}
+
+.fw-5 {
+    font-weight: 500;
+}
+
 .fw-6 {
     font-weight: 600;
 }
@@ -70,12 +94,20 @@ ul {
     font-weight: 700;
 }
 
+.fs-14 {
+    font-size: 14px;
+}
+
 .fs-36 {
     font-size: 36px;
 }
 
 .fs-25 {
     font-size: 25px;
+}
+
+.fs-16 {
+    font-size: 16px;
 }
 
 .text-left {
@@ -98,7 +130,7 @@ ul {
     color: #FF7F01;
 }
 
-.main-center-container{
+.main-center-container {
     max-width: 1140px;
     margin: 0 auto;
 }
@@ -115,8 +147,33 @@ ul {
     justify-content: center;
 }
 
+.ml-0 {
+    margin-left: 0;
+}
+
+.text-align-left {
+    text-align: left;
+}
+
+.text-align-center {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.gray-font {
+    color: #666;
+}
+
+.gray-btn {
+    background-color: rgba(102, 102, 102, 0.35);
+    color: #fff;
+    width: 100%;
+    margin-top: 19px;
+}
+
+
 @media screen and (max-width: 767.98px) {
-    .main-center-container{
+    .main-center-container {
         padding: 0 20px;
     }
 
