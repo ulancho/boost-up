@@ -6,26 +6,37 @@ const FirstLoginPage = () => {
         <div className={styles.login_container}>
             <div className={`${styles.max_width570} text-align-center`}>
                 <h4>Добро пожаловать</h4>
-                <p className={styles.gray_font}>
+                <p className="gray-font">
                     There are many variations of passages of Lorem Ipsum available, but the majority
                     have suffered alteration in some form, by injected humour, or randomised words
                     which don't look even slightly believable.{' '}
                 </p>
-                <div>
-                    <div className={styles.circle}>1</div>
-                    <div className={styles.dash}></div>
-                    <div className={styles.circle}>2</div>
-                    <div className={styles.dash}></div>
-                    <div className={styles.circle}>3</div>
+                <div className={styles.next_step_container}>
+                    <div className={`${styles.wrapper}`}>
+                        <div className={`${styles.circle} ${styles.orange_circle}`}>1</div> <br />
+                        <p className="fs-16 fw-5 orange-color pt-10">Данные</p>
+                    </div>
+                    <div className={`${styles.dash} mr-30`}></div>
+                    <div className={`${styles.wrapper}`}>
+                        <div className={styles.circle}>2</div>
+                        <br />
+                        <p className={`${styles.gray_font} fs-16 fw-5 pt-10`}>Тестировании</p>
+                    </div>
+                    <div className={`${styles.dash} ml-30`}></div>
+                    <div className={`${styles.wrapper}`}>
+                        <div className={styles.circle}>3</div>
+                        <br />
+                        <p className={`${styles.gray_font} fs-16 fw-5 pt-10`}>Готово</p>
+                    </div>
                 </div>
             </div>
             <form action="">
                 <div className={`${styles.login_form} text-align-center`}>
                     <span className="text-left">
-                        <div className={`${styles.circle} ${styles.width_24}`}>1</div>
+                        <div className={`${styles.circle} ${styles.width_24_orange_circle}`}>1</div>
                         <p className="orange-color fs-25 fw-5">Информация о тебе</p>
                     </span>
-                    <p className={`${styles.gray_font} text-align-left fs-16 fw-3`}>
+                    <p className={` gray-font text-align-left fs-16 fw-3 pt-10`}>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                         quis nostrud exercitation ullamco laboris nisi ut.
