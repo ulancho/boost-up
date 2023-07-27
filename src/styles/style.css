@@ -9,6 +9,10 @@ body {
     overflow-x: hidden;
 }
 
+.mt-240 {
+    margin-top: 240px;
+}
+
 .mr-20 {
     margin-right: 20px;
 }
@@ -232,6 +236,11 @@ ul {
         padding: 0 20px;
     }
 
+    .mt-240 {
+        margin-top: 0;
+    }
+
+
     .pt-25 {
         padding-left: 25px;
     }
@@ -315,5 +324,12 @@ ul {
 
     .one-page {
         overflow: visible;
+    }
+
+    .align-to-height {
+        display: flex;
+        align-items: center;
+        height: 50vh;
+        justify-content: center;
     }
 }

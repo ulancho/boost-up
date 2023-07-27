@@ -17,8 +17,13 @@ const TestPage = () => {
 
                     <form className={`${styles.test_card} ${styles.mt_20} mt-30`}>
                         <div className={`${styles.test_questions_wrap} text-align-left`}>
-                            <input type="checkbox" name="vehicle1" />
-                            <label for="vehicle1">
+                            <input
+                                type="checkbox"
+                                id="first_question"
+                                value="first_question"
+                                name="questions"
+                            />
+                            <label for="first_question">
                                 Обойдете всех и оцените, где меньше испорченных фруктов, какой
                                 продавец самый дружелюбный, у кого ниже цена. Найдете лучший
                                 вариант.
@@ -26,15 +31,25 @@ const TestPage = () => {
                         </div>
 
                         <div className={`${styles.test_questions_wrap}  mt-30`}>
-                            <input type="checkbox" name="firstOption" />
-                            <label for="vehicle2">
+                            <input
+                                type="checkbox"
+                                id="second_question"
+                                value="second_question"
+                                name="questions"
+                            />
+                            <label for="second_question">
                                 У вас есть план. Зададите первому продавцу три вопроса: откуда
                                 абрикосы, какой сорт, сладкие ли. Если продавец не сможет ответить
                                 хотя бы на один, перейдете к следующей палатке.
                             </label>
                         </div>
                         <div className={`${styles.test_questions_wrap} mt-30`}>
-                            <input type="checkbox" name="vehicle3" />
+                            <input
+                                type="checkbox"
+                                id="third_question"
+                                value="third_question"
+                                name="questions"
+                            />
                             <label for="vehicle3">
                                 {' '}
                                 Купите у продавца, который выложил абрикосы без вмятин в ровные
@@ -42,7 +57,12 @@ const TestPage = () => {
                             </label>
                         </div>
                         <div className={`${styles.test_questions_wrap} mt-30`}>
-                            <input type="checkbox" name="vehicle3" />
+                            <input
+                                type="checkbox"
+                                id="fourth_question"
+                                value="fourth_question"
+                                name="questions"
+                            />
                             <label for="vehicle3">
                                 {' '}
                                 Купите у продавца, который выложил абрикосы без вмятин в ровные
