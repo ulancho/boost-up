@@ -13,7 +13,7 @@ const TestPage = () => {
                         Вечер пятницы. Пришли друзья и предлагают посмотреть <br /> фильм. Ваша
                         очередь выбирать. Что включите?
                     </h2>
-                    <img className="timer" src={timer} alt="" />
+                    <img className={styles.timer} src={timer} alt="" />
 
                     <form className={`${styles.test_card} ${styles.mt_20} mt-30`}>
                         <div className={`${styles.test_questions_wrap} text-align-left`}>
