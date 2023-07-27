@@ -108,7 +108,8 @@ h2 {
 p,
 a,
 button,
-label {
+label,
+input {
     color: #2B2B2B;
     font-size: 20px;
     font-family: Raleway;
