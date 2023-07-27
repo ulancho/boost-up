@@ -32,7 +32,7 @@ const AboutInternship = () => {
                             Присоединяйтесь к нам и ускорьте свое развитие в IT с BoostUp!{' '}
                         </h2>
                         <div className="pt-25">
-                            <button className="btn ">Регистрация</button>
+                            <button className="btn btn-square ">Регистрация</button>
                         </div>
                     </div>
                 </div>
