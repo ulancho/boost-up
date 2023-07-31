@@ -11,7 +11,7 @@ const ResultPage = () => {
                 <h2 className={`${styles.fs_24} orange-color fw-5 fs-36`}>Поздравляем</h2>
                 <div className="center-wrapper">
                     <p className={`${styles.fs_20} fs-25`}>Ваш результат</p>
-                    <h2 className={`${styles.fs_24} orange-color`}>100</h2>
+                    <h2 className={`${styles.fs_24} ${styles.pt_7_5}  orange-color`}>100</h2>
                     <p className={`${styles.fs_22} fs-25 fw-3 unbounded-font`}> Баллов</p>
                 </div>
                 <img className={styles.trophy} src={trophy} alt="" />
