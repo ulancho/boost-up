@@ -5,6 +5,7 @@ import MainPage from './pages/main/MainPage';
 import RegistrationPage from './pages/registration/RegistrationPage';
 import StartTestPage from './pages/start/StartPage';
 import TestPage from './pages/test/TestPage';
+import ResultPage from './pages/result/ResultPage';
 
 const router = createBrowserRouter(
     [
@@ -23,6 +24,10 @@ const router = createBrowserRouter(
         {
             path: '/test',
             element: <TestPage />
+        },
+        {
+            path: '/result',
+            element: <ResultPage />
         }
     ],
     { basename: '/boost-up' }
