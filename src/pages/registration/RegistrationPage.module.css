@@ -8,31 +8,6 @@ h4 {
     line-height: 68px;
 }
 
-.form_group {
-    margin-top: 24px;
-}
-
-.form_group label {
-    display: block;
-    text-align: left;
-    font-size: 14px;
-}
-
-.form_group p {
-    font-size: 14px;
-    margin: 0;
-    padding-bottom: 11px;
-}
-
-.form_group input {
-    padding: 18px 15px;
-    border-radius: 12px;
-    border: 1px solid rgba(102, 102, 102, 0.35);
-    width: 100%;
-    box-sizing: border-box;
-    font-size: 17px;
-}
-
 .dash {
     display: inline-block;
     width: 39%;

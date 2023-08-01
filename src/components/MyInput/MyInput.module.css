@@ -1,0 +1,27 @@
+.form_group {
+    margin-top: 24px;
+}
+
+
+.form_group label {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    padding-bottom: 11px;
+}
+
+.form_group input {
+    padding: 18px 15px;
+    border-radius: 12px;
+    border: 1px solid rgba(102, 102, 102, 0.35);
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 17px;
+}
+
+.error{
+    color: #EE1D52;
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: left;
+}
