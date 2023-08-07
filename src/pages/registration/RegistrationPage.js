@@ -3,6 +3,7 @@ import styles from './RegistrationPage.module.css';
 import MyInput from '../../components/MyInput/MyInput';
 import { Formik } from 'formik';
 import * as Yup from 'yup';
+import MySelect from '../../components/MySelect/MySelect';
 
 const FirstLoginPage = () => {
     return (
@@ -45,72 +46,56 @@ const FirstLoginPage = () => {
                 </p>
                 <Formik
                     initialValues={{
-                        name: ''
+                        first_name: '',
+                        lastname: '',
+                        patronymic: '',
+                        date_of_birth: '',
+                        study_place: '',
+                        study_course: '',
+                        phone_number: '',
+                        direction_id: ''
                     }}
                     validationSchema={Yup.object({
-                        name: Yup.string().required('Не заполненное поле')
+                        first_name: Yup.string().required('Не заполненное поле'),
+                        lastname: Yup.string().required('Не заполненное поле'),
+                        patronymic: Yup.string().required('Не заполненное поле'),
+                        date_of_birth: Yup.string().required('Не заполненное поле'),
+                        study_place: Yup.string().required('Не заполненное поле'),
+                        study_course: Yup.string().required('Не заполненное поле'),
+                        phone_number: Yup.string().required('Не заполненное поле'),
+                        direction_id: Yup.string()
+                            .oneOf(['1'], 'Invalid Job Type')
+                            .required('Не заполненное поле')
                     })}
                     onSubmit={async (values, { setSubmitting }) => {
                         await new Promise((r) => setTimeout(r, 500));
                         setSubmitting(false);
                     }}>
                     <>
-                        <MyInput type="text" label="Имя" name="name" />
+                        <MyInput type="text" label="Имя" name="first_name" />
                         <MyInput type="text" label="Фамилия" name="lastname" />
-                        <MyInput type="text" label="Отчество" name="surname" />
-
-                        <p className="text-align-left fs-14 fw-4 gray-font ml-0 pt-25">
-                            Укажи дату своего рождения
-                        </p>
-                        <div className={`${styles.wrap_items} center-wrapper`}>
-                            <div className={`${styles.form_group} ${styles.width190} mr-20 mt-0`}>
-                                <label for="day">
-                                    <p>День</p>
-                                </label>
-                                <select name="day"></select>
-                            </div>
-                            <div className={`${styles.form_group} ${styles.width190} mr-20 mt-0`}>
-                                <label for="month">
-                                    <p>Месяц</p>
-                                </label>
-                                <select name="month"></select>
-                            </div>
-                            <div className={`${styles.form_group} ${styles.width190} mt-0`}>
-                                <label for="year">
-                                    <p>Год</p>
-                                </label>
-                                <select
-                                    id="select_year"
-                                    start="1900"
-                                    end="2022"
-                                    name="year"></select>
-                            </div>
-                        </div>
-                        <div className={styles.form_group}>
-                            <p className="text-align-left fs-14 fw-4 gray-font">
-                                Место учебы (текущее или последнее образовательное учреждение)
-                            </p>
-                            <input type="text" />
-                        </div>
-                        <div className={styles.form_group}>
-                            <p className="text-align-left fs-14 fw-4 gray-font">
-                                Образовательные курсы (какие курсы прошли по IT)
-                            </p>
-                            <input type="text" />
-                        </div>
-                        <div className="center-wrapper">
-                            <div className={`${styles.form_group} ${styles.width300} mr-20`}>
-                                <p className="text-align-left fs-14 fw-4 gray-font">
-                                    Номер телефона (номер должен быть
-                                    <br /> зарегистрирован в Telegram или WhatsApp)
-                                </p>
-                                <select></select>
-                            </div>
-                            <div className={`${styles.form_group} ${styles.width300} pt-12`}>
-                                <p className="text-align-left fs-14 fw-4 gray-font">Направление </p>
-                                <select></select>
-                            </div>
-                        </div>
+                        <MyInput type="text" label="Отчество" name="patronymic" />
+                        <MyInput
+                            type="date"
+                            label="Укажите дату своего рождения"
+                            name="date_of_birth"
+                        />
+                        <MyInput
+                            type="text"
+                            label="Место учебы (текущее или последнее образовательное учреждение)"
+                            name="study_place"
+                        />
+                        <MyInput
+                            type="text"
+                            label="Образовательные курсы (какие курсы прошли по IT)"
+                            name="study_course"
+                        />
+                        <MyInput
+                            type="number"
+                            label="Номер телефона (номер должен быть зарегистрирован в Telegram или WhatsApp)"
+                            name="phone_number"
+                        />
+                        <MySelect label="Направление" name="direction_id" />
                     </>
                 </Formik>
                 <button className="btn gray-btn">Далее</button>
