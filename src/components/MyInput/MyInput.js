@@ -8,7 +8,7 @@ const MyInput = ({ label, type, ...props }) => {
     return (
         <div className={styles.form_group}>
             <label htmlFor={props.id || props.name}>{label}</label>
-            <input className={type} {...field} {...props} />
+            <input type={type} {...field} {...props} />
             {meta.touched && meta.error ? <p className={styles.error}>{meta.error}</p> : null}
         </div>
     );
