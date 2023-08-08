@@ -5,42 +5,51 @@ import { Formik, Form } from 'formik';
 import * as Yup from 'yup';
 import MySelect from '../../components/MySelect/MySelect';
 import { API } from '../../api/api';
+import { dateConvert } from '../../utils/date';
+import { useNavigate } from 'react-router-dom';
 
 const FirstLoginPage = () => {
     const [directions, setDirections] = useState([]);
     const [directionsId, setDirectionsId] = useState([]);
+    const navigate = useNavigate();
+
+    const getCourses = async () => {
+        try {
+            const { data, status } = await API.getDirections();
+            if (status === 200) {
+                setDirections(data);
+                getID(data);
+            }
+        } catch {
+            console.log('error getCourses');
+        } finally {
+            console.log('finally getCourses');
+        }
+    };
+
     const getID = (data) => {
         const ids = data.map((item) => item.id.toString());
         setDirectionsId(ids);
     };
 
     const registration = async (values) => {
-        console.log(values.date_of_birth);
-        // try {
-        //     const response = await API.registration(values);
-        //     console.log(response);
-        // } catch (e) {
-        //     console.log(e);
-        // } finally {
-        //     console.log('done');
-        // }
+        values.date_of_birth = dateConvert(values.date_of_birth);
+        try {
+            const { data, status } = await API.registration(values);
+            if (status === 200) {
+                localStorage.setItem('student_exam_id', data.student_exam_id);
+                navigate('/start');
+            }
+        } catch (e) {
+            console.log(e);
+        } finally {
+            console.log('finally registration');
+        }
     };
 
     useEffect(() => {
-        (async () => {
-            try {
-                const { data, status } = await API.getDirections();
-                setDirections(data);
-                getID(data);
-            } catch {
-                console.log('error');
-            } finally {
-                console.log('done');
-            }
-        })();
+        getCourses();
     }, []);
-
-    console.log('FirstLoginPage');
 
     return (
         <div className={styles.login_container}>
@@ -132,7 +141,7 @@ const FirstLoginPage = () => {
                             name="phone_number"
                         />
                         <MySelect label="Направление" name="direction_id" data={directions} />
-                        <button type="submit" className="btn gray-btn">
+                        <button type="submit" className="btn registration-btn">
                             Далее
                         </button>
                     </Form>
