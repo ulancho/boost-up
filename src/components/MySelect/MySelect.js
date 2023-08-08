@@ -12,7 +12,9 @@ const MySelect = ({ label, data, ...props }) => {
             <select {...field} {...props}>
                 <option value="0">Выберите</option>
                 {data.map((item) => (
-                    <option value={item.id}>{item.name}</option>
+                    <option key={item.id} value={item.id}>
+                        {item.name}
+                    </option>
                 ))}
             </select>
             {meta.touched && meta.error ? <p className={styles.error}>{meta.error}</p> : null}
