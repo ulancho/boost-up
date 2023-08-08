@@ -1,8 +1,9 @@
 import React from 'react';
 import styles from '../MyInput/MyInput.module.css';
 import { useField } from 'formik';
+import directions from '../../pages/main/components/directions/Directions';
 
-const MySelect = ({ label, ...props }) => {
+const MySelect = ({ label, data, ...props }) => {
     const [field, meta] = useField(props);
 
     return (
@@ -10,7 +11,9 @@ const MySelect = ({ label, ...props }) => {
             <label htmlFor={props.id || props.name}>{label}</label>
             <select {...field} {...props}>
                 <option value="0">Выберите</option>
-                <option value="1">Frontend</option>
+                {data.map((item) => (
+                    <option value={item.id}>{item.name}</option>
+                ))}
             </select>
             {meta.touched && meta.error ? <p className={styles.error}>{meta.error}</p> : null}
         </div>

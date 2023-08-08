@@ -1,11 +1,47 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './RegistrationPage.module.css';
 import MyInput from '../../components/MyInput/MyInput';
-import { Formik } from 'formik';
+import { Formik, Form } from 'formik';
 import * as Yup from 'yup';
 import MySelect from '../../components/MySelect/MySelect';
+import { API } from '../../api/api';
 
 const FirstLoginPage = () => {
+    const [directions, setDirections] = useState([]);
+    const [directionsId, setDirectionsId] = useState([]);
+    const getID = (data) => {
+        const ids = data.map((item) => item.id.toString());
+        setDirectionsId(ids);
+    };
+
+    const registration = async (values) => {
+        console.log(values.date_of_birth);
+        // try {
+        //     const response = await API.registration(values);
+        //     console.log(response);
+        // } catch (e) {
+        //     console.log(e);
+        // } finally {
+        //     console.log('done');
+        // }
+    };
+
+    useEffect(() => {
+        (async () => {
+            try {
+                const { data, status } = await API.getDirections();
+                setDirections(data);
+                getID(data);
+            } catch {
+                console.log('error');
+            } finally {
+                console.log('done');
+            }
+        })();
+    }, []);
+
+    console.log('FirstLoginPage');
+
     return (
         <div className={styles.login_container}>
             <div className={`${styles.max_width570} text-align-center`}>
@@ -64,14 +100,14 @@ const FirstLoginPage = () => {
                         study_course: Yup.string().required('Не заполненное поле'),
                         phone_number: Yup.string().required('Не заполненное поле'),
                         direction_id: Yup.string()
-                            .oneOf(['1'], 'Invalid Job Type')
+                            .oneOf(directionsId, 'Недопустимое направление')
                             .required('Не заполненное поле')
                     })}
                     onSubmit={async (values, { setSubmitting }) => {
-                        await new Promise((r) => setTimeout(r, 500));
+                        registration(values);
                         setSubmitting(false);
                     }}>
-                    <>
+                    <Form>
                         <MyInput type="text" label="Имя" name="first_name" />
                         <MyInput type="text" label="Фамилия" name="lastname" />
                         <MyInput type="text" label="Отчество" name="patronymic" />
@@ -95,10 +131,12 @@ const FirstLoginPage = () => {
                             label="Номер телефона (номер должен быть зарегистрирован в Telegram или WhatsApp)"
                             name="phone_number"
                         />
-                        <MySelect label="Направление" name="direction_id" />
-                    </>
+                        <MySelect label="Направление" name="direction_id" data={directions} />
+                        <button type="submit" className="btn gray-btn">
+                            Далее
+                        </button>
+                    </Form>
                 </Formik>
-                <button className="btn gray-btn">Далее</button>
             </div>
         </div>
     );
