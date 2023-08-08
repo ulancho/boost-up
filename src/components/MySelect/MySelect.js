@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from '../MyInput/MyInput.module.css';
 import { useField } from 'formik';
-import directions from '../../pages/main/components/directions/Directions';
 
 const MySelect = ({ label, data, ...props }) => {
     const [field, meta] = useField(props);
