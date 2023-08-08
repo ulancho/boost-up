@@ -10,5 +10,11 @@ export const API = {
     },
     registration(data) {
         return instance.post('student/append', data);
+    },
+    start(id) {
+        return instance.post('exam/start?student_exam_id=' + id);
+    },
+    question(id) {
+        return instance.get('exam/question/next?student_exam_id=' + id);
     }
 };
