@@ -49,50 +49,49 @@ const TestPage = () => {
             </div>
 
             {/*нумерация*/}
-            {/*<div className={styles.container_for_order_reverse}>*/}
-            {/*    <div className={styles.order2}>*/}
-            {/*        {' '}*/}
-            {/*        <div className={styles.widget_wrapper}>*/}
-            {/*            <button className={`${styles['ellipse_widget']} ${styles['e_w_orange']}`}>*/}
-            {/*                1*/}
-            {/*            </button>*/}
-            {/*            <button className={styles.ellipse_widget}>2</button>{' '}*/}
-            {/*            <button className={styles.ellipse_widget}>3</button>{' '}*/}
-            {/*            <button className={styles.ellipse_widget}>4</button>{' '}*/}
-            {/*            <button className={styles.ellipse_widget}>5</button>{' '}*/}
-            {/*            <button className={styles.ellipse_widget}>6</button>{' '}*/}
-            {/*            <button className={styles.ellipse_widget}>7</button>{' '}*/}
-            {/*            <button className={styles.ellipse_widget}>8</button>{' '}*/}
-            {/*            <button className={styles.ellipse_widget}>9</button>{' '}*/}
-            {/*            <button className={`${styles.ellipse_widget_24} ${styles.ellipse_widget}`}>*/}
-            {/*                10*/}
-            {/*            </button>*/}
-            {/*            <button className={`${styles.ellipse_widget_24} ${styles.ellipse_widget}`}>*/}
-            {/*                11*/}
-            {/*            </button>{' '}*/}
-            {/*            <button className={`${styles.ellipse_widget_24} ${styles.ellipse_widget}`}>*/}
-            {/*                12*/}
-            {/*            </button>{' '}*/}
-            {/*            <button className={`${styles.ellipse_widget_24} ${styles.ellipse_widget}`}>*/}
-            {/*                13*/}
-            {/*            </button>{' '}*/}
-            {/*            <button className={`${styles.ellipse_widget_24} ${styles.ellipse_widget}`}>*/}
-            {/*                14*/}
-            {/*            </button>{' '}*/}
-            {/*            <button className={`${styles.ellipse_widget_24} ${styles.ellipse_widget}`}>*/}
-            {/*                15*/}
-            {/*            </button>{' '}*/}
-            {/*        </div>*/}
-            {/*    </div>*/}
-            {/*    <div className={styles.order1}>*/}
-            {/*        <div className={`${styles.center_container} mt-70 text-right mr-107`}>*/}
-            {/*            <button className={`${styles.btn_17_102} btn btn-transparent mr-20`}>*/}
-            {/*                Назад{' '}*/}
-            {/*            </button>*/}
-            {/*            <button className="btn btn-size-17-102">Далее</button>*/}
-            {/*        </div>*/}
-            {/*    </div>*/}
-            {/*</div>*/}
+            <div className={styles.container_for_order_reverse}>
+                <div className={styles.order2}>
+                    <div className={styles.widget_wrapper}>
+                        <button className={`${styles['ellipse_widget']} ${styles['e_w_orange']}`}>
+                            1
+                        </button>
+                        <button className={styles.ellipse_widget}>2</button>
+                        <button className={styles.ellipse_widget}>3</button>
+                        <button className={styles.ellipse_widget}>4</button>
+                        <button className={styles.ellipse_widget}>5</button>
+                        <button className={styles.ellipse_widget}>6</button>
+                        <button className={styles.ellipse_widget}>7</button>
+                        <button className={styles.ellipse_widget}>8</button>
+                        <button className={styles.ellipse_widget}>9</button>
+                        <button className={`${styles.ellipse_widget_24} ${styles.ellipse_widget}`}>
+                            10
+                        </button>
+                        <button className={`${styles.ellipse_widget_24} ${styles.ellipse_widget}`}>
+                            11
+                        </button>{' '}
+                        <button className={`${styles.ellipse_widget_24} ${styles.ellipse_widget}`}>
+                            12
+                        </button>{' '}
+                        <button className={`${styles.ellipse_widget_24} ${styles.ellipse_widget}`}>
+                            13
+                        </button>{' '}
+                        <button className={`${styles.ellipse_widget_24} ${styles.ellipse_widget}`}>
+                            14
+                        </button>{' '}
+                        <button className={`${styles.ellipse_widget_24} ${styles.ellipse_widget}`}>
+                            15
+                        </button>{' '}
+                    </div>
+                </div>
+                <div className={styles.order1}>
+                    <div className={`${styles.center_container} mt-70 text-right mr-107`}>
+                        <button className={`${styles.btn_17_102} btn btn-transparent mr-20`}>
+                            Назад{' '}
+                        </button>
+                        <button className="btn btn-size-17-102">Далее</button>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 };
