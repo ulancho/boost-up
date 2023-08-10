@@ -34,24 +34,33 @@
 }
 
 .container_for_order_reverse{
-    border: 1px solid red;
     margin: 30px 0 60px;
 }
 
+.order1{
+    border: 1px solid green;
+}
 
+.order2{
+
+}
+
+.widget_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
 
 
 .ellipse_widget {
-    margin: 0 5px;
     display: flex;
-    padding: 2px 30px;
+    padding: 3px 30px;
     border-radius: 20px;
     background: rgba(102, 102, 102, 0.20);
     color: #666;
     font-size: 13px;
     font-weight: 700;
     border: none;
-    display: inline-block;
 }
 
 .e_w_orange {
@@ -59,8 +68,6 @@
     color: #fff;
 }
 
-.widget_wrapper {
-}
 
 @media screen and (max-width: 767.98px) {
 
@@ -92,12 +99,6 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-    }
-
-    .ellipse_widget_24 {
-        padding: 2px 24px !important;
-        margin: 5px !important;
-
     }
 
     .ellipse_widget {
