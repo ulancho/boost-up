@@ -27,7 +27,7 @@ const TestPage = () => {
     }, []);
 
     return (
-        <div className={styles.container}>
+        <div className="main-center-container">
             <HeaderTest />
             <div className={styles.question_container}>
                 <h2 className={`${styles.fs_14} ${styles.question} fw-5 fs-25`}>{question}</h2>

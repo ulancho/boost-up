@@ -21,7 +21,7 @@ const StartTestPage = () => {
     };
 
     return (
-        <div className="one-page">
+        <div className="main-center-container">
             <HeaderTest />
             <div className="align-to-height">
                 <div className="text-align-center">
