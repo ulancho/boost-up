@@ -1,4 +1,8 @@
-h4 {
+.loginContainer{
+    margin: 88px 0;
+}
+
+.welcome {
     color: #2B2B2B;
     text-align: center;
     font-family: Raleway;
@@ -16,13 +20,11 @@ h4 {
 }
 
 .login_form {
-    margin-top: 56px;
     padding: 24px;
     background-color: #fff;
-    max-width: 43%;
+    max-width: 50%;
     border-radius: 24px;
     box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.12);
-
 }
 
 .circle {
@@ -68,10 +70,6 @@ select {
 
 }
 
-.login_container {
-    margin: 90px 0;
-}
-
 .timer {
     position: absolute;
     right: 0px;
@@ -110,4 +108,18 @@ select {
 .next_step_container {
     display: flex;
     margin: 56px 0;
+}
+
+@media screen and (max-width: 767.98px) {
+    .welcome{
+        font-size: 30px;
+    }
+
+    .login_form{
+        max-width: 100%;
+    }
+
+    .circle{
+        display: none;
+    }
 }
