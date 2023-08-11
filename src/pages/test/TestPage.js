@@ -89,14 +89,14 @@ const TestPage = () => {
                 <div className={styles.order2}>
                     <Pagination length={totalQuestionCount} questionNum={questionNum} />
                 </div>
-                {/*<div className={styles.order1}>*/}
-                {/*    <div className={`${styles.center_container} mt-70 text-right mr-107`}>*/}
-                {/*        <button className={`${styles.btn_17_102} btn btn-transparent mr-20`}>*/}
-                {/*            Назад{' '}*/}
-                {/*        </button>*/}
-                {/*        <button className="btn btn-size-17-102">Далее</button>*/}
-                {/*    </div>*/}
-                {/*</div>*/}
+                <div className={`${styles.order1} mt-70`}>
+                    <div className={`text-right`}>
+                        <button className={`${styles.btn_17_102} btn btn-transparent mr-20`}>
+                            Назад
+                        </button>
+                        <button className="btn btn-size-17-102">Далее</button>
+                    </div>
+                </div>
             </div>
         </div>
     );
