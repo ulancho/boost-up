@@ -24,6 +24,7 @@ const Pagination = ({ length, questionNum }) => {
 
 const TestPage = () => {
     const [question, setQuestion] = useState('');
+    const [questionId, setQuestionId] = useState(null);
     const [options, setOptions] = useState([]);
     const [totalQuestionCount, setTotalQuestionCount] = useState(0);
     const [questionNum, setQuestionNum] = useState(0);
@@ -46,14 +47,31 @@ const TestPage = () => {
         }
     };
 
+    const checkId = (arr, id) => arr.findIndex((item) => item === id);
+
+    const deleteIdInAnswers = (arr, index) => {
+        arr.splice(index, 1);
+        setAnswers(arr);
+    };
+
     const onChangeAnswer = (e) => {
         const arr = [...answers];
+        const id = +e.target.value;
+        const index = checkId(arr, id);
 
         if (e.target.checked) {
-            arr.push(e.target.value);
-            setAnswers(arr);
+            if (index < 0) {
+                arr.push(id);
+                setAnswers(arr);
+            }
+        } else {
+            if (index >= 0) {
+                deleteIdInAnswers(arr, index);
+            }
         }
     };
+
+    const onWards = () => {};
 
     useEffect(() => {
         getQuestion();
@@ -83,7 +101,6 @@ const TestPage = () => {
                     })}
                 </div>
             </div>
-
             {/*нумерация*/}
             <div className={styles.container_for_order_reverse}>
                 <div className={styles.order2}>
@@ -94,7 +111,9 @@ const TestPage = () => {
                         <button className={`${styles.btn_17_102} btn btn-transparent mr-20`}>
                             Назад
                         </button>
-                        <button className="btn btn-size-17-102">Далее</button>
+                        <button className="btn btn-size-17-102" onClick={onWards}>
+                            Далее
+                        </button>
                     </div>
                 </div>
             </div>
