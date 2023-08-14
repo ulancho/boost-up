@@ -19,5 +19,8 @@ export const API = {
     },
     answer(body) {
         return instance.put('exam/question/answer', body);
+    },
+    stop(id) {
+        return instance.put('exam/stop?student_exam_id=' + id);
     }
 };
