@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import HeaderTest from '../../components/HeaderTest/HeaderTest';
 import styles from './TestPage.module.css';
 import { API } from '../../api/api';
+import { useNavigate } from 'react-router-dom';
 
 const Pagination = ({ length, questionNum }) => {
     const components = [];
@@ -23,12 +24,16 @@ const Pagination = ({ length, questionNum }) => {
 };
 
 const TestPage = () => {
+    const navigate = useNavigate();
+
+    const [reload, setReload] = useState(0);
     const [question, setQuestion] = useState('');
     const [questionId, setQuestionId] = useState(null);
     const [options, setOptions] = useState([]);
     const [totalQuestionCount, setTotalQuestionCount] = useState(0);
     const [questionNum, setQuestionNum] = useState(0);
     const [answers, setAnswers] = useState([]);
+    const [pending, setPending] = useState(false);
 
     const getQuestion = async () => {
         const student_exam_id = localStorage.getItem('student_exam_id');
@@ -39,6 +44,7 @@ const TestPage = () => {
                 setOptions(data.options);
                 setTotalQuestionCount(data.totalQuestionCount);
                 setQuestionNum(data.questionNum);
+                setQuestionId(data.question_id);
             }
         } catch (e) {
             console.log(e);
@@ -71,11 +77,24 @@ const TestPage = () => {
         }
     };
 
-    const onWards = () => {};
+    const onWards = async () => {
+        setPending(true);
+        const request_body = {
+            answers: answers,
+            question_id: questionId
+        };
+
+        const { data, status } = await API.answer(request_body);
+
+        if (status === 200) {
+            setReload(reload + 1);
+            setPending(false);
+        }
+    };
 
     useEffect(() => {
         getQuestion();
-    }, []);
+    }, [reload]);
 
     console.log('TestPage reload');
 
@@ -112,7 +131,7 @@ const TestPage = () => {
                             Назад
                         </button>
                         <button className="btn btn-size-17-102" onClick={onWards}>
-                            Далее
+                            {pending ? 'Загрузка...' : 'Далее'}
                         </button>
                     </div>
                 </div>

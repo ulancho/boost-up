@@ -8,13 +8,16 @@ export const API = {
     getDirections() {
         return instance.get('direction/list');
     },
-    registration(data) {
-        return instance.post('student/append', data);
+    registration(body) {
+        return instance.post('student/append', body);
     },
     start(id) {
         return instance.post('exam/start?student_exam_id=' + id);
     },
     question(id) {
         return instance.get('exam/question/next?student_exam_id=' + id);
+    },
+    answer(body) {
+        return instance.put('exam/question/answer', body);
     }
 };
