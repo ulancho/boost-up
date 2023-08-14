@@ -11,6 +11,7 @@ const StartTestPage = () => {
         try {
             const { data, status } = await API.start(student_exam_id);
             if (status === 200) {
+                localStorage.setItem('questionCount', data.questionCount);
                 navigate('/test');
             }
         } catch (e) {

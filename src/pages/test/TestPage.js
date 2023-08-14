@@ -9,7 +9,7 @@ const Pagination = ({ length, questionNum }) => {
 
     for (let i = 0; i < length; i++) {
         let activeClass = '';
-        if (questionNum === i + 1) {
+        if (+questionNum === i + 1) {
             activeClass = 'e_w_orange';
         }
 
@@ -25,26 +25,31 @@ const Pagination = ({ length, questionNum }) => {
 
 const TestPage = () => {
     const navigate = useNavigate();
-
-    const [reload, setReload] = useState(0);
     const [question, setQuestion] = useState('');
     const [questionId, setQuestionId] = useState(null);
     const [options, setOptions] = useState([]);
-    const [totalQuestionCount, setTotalQuestionCount] = useState(0);
     const [questionNum, setQuestionNum] = useState(0);
     const [answers, setAnswers] = useState([]);
     const [pending, setPending] = useState(false);
+    const questionCount = localStorage.getItem('questionCount');
+    const questionNumLocal = localStorage.getItem('questionNum');
 
     const getQuestion = async () => {
         const student_exam_id = localStorage.getItem('student_exam_id');
+
+        if (+questionNumLocal === +questionCount) {
+            navigate('/result');
+            return;
+        }
+
         try {
             const { data, status } = await API.question(student_exam_id);
             if (status === 200) {
                 setQuestion(data.question);
                 setOptions(data.options);
-                setTotalQuestionCount(data.totalQuestionCount);
-                setQuestionNum(data.questionNum);
                 setQuestionId(data.question_id);
+                setQuestionNum(data.questionNum);
+                localStorage.setItem('questionNum', data.questionNum);
             }
         } catch (e) {
             console.log(e);
@@ -87,14 +92,13 @@ const TestPage = () => {
         const { data, status } = await API.answer(request_body);
 
         if (status === 200) {
-            setReload(reload + 1);
-            setPending(false);
+            window.location.reload();
         }
     };
 
     useEffect(() => {
         getQuestion();
-    }, [reload]);
+    }, []);
 
     console.log('TestPage reload');
 
@@ -123,7 +127,7 @@ const TestPage = () => {
             {/*нумерация*/}
             <div className={styles.container_for_order_reverse}>
                 <div className={styles.order2}>
-                    <Pagination length={totalQuestionCount} questionNum={questionNum} />
+                    <Pagination length={questionCount} questionNum={questionNum} />
                 </div>
                 <div className={`${styles.order1} mt-70`}>
                     <div className={`text-right`}>
