@@ -1,26 +1,41 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import HeaderTest from '../../components/HeaderTest/HeaderTest';
 import styles from './ResultPage.module.css';
 import trophy from '../../assets/trophy.svg';
+import { API } from '../../api/api';
+import { useNavigate } from 'react-router-dom';
+import Loader from '../../components/Loader/Loader';
 
 const ResultPage = () => {
+    const navigate = useNavigate();
+    const [result, setResult] = useState(true);
+    const getResult = async () => {
+        const student_exam_id = localStorage.getItem('student_exam_id');
+
+        const { data, status } = await API.stop(student_exam_id);
+    };
+
+    const onClickDone = () => {
+        localStorage.clear();
+        navigate('/');
+    };
+
+    useEffect(() => {
+        getResult();
+    }, []);
+
     return (
-        <div className="one-page">
+        <div className="main-center-container">
             <HeaderTest />
             <div className={`${styles.results_card} text-align-center mb-8`}>
-                <h2 className={`${styles.fs_24} orange-color fw-5 fs-36`}>Поздравляем</h2>
-                <div className="center-wrapper">
-                    <p className={`${styles.fs_20} fs-25`}>Ваш результат</p>
-                    <h2 className={`${styles.fs_24} ${styles.pt_7_5}  orange-color`}>100</h2>
-                    <p className={`${styles.fs_22} fs-25 fw-3 unbounded-font`}> Баллов</p>
-                </div>
-                <img className={styles.trophy} src={trophy} alt="" />
-                <p className={styles.fs_16}>
-                    Поздравляем вам удалось пройти тест и набрать достаточное количество балов
+                <h2 className={`${styles.fs_24} orange-color fw-5 fs-36`}>Вы прошли тест!</h2>
+                <img className={`${styles.trophy} mt-30`} src={trophy} alt="" />
+                <p className={`${styles.fs_16} mt-30`}>
+                    Ожидайте результаты. В ближайшее время с вами свяжется наш менеджер
                 </p>
-                <p className="fs-20 fw-4 unbounded-font mb-8 pt-12 ">Интервью состоится</p>
-                <h2 className="orange-color fw-5">23.09.2023 16:05</h2>
-                <button className="btn mt-30 btn-size-17-102">Готово</button>
+                <button className="btn mt-30 btn-size-17-102" onClick={onClickDone}>
+                    Готово
+                </button>
             </div>
         </div>
     );
