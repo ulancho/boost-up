@@ -2,6 +2,7 @@ import React from 'react';
 import internshipDesktop from '../../../../assets/internship.svg';
 import internshipMobile from '../../../../assets/internship.png';
 import styles from './AboutInternshipt.module.css';
+import { Link } from 'react-router-dom';
 
 const AboutInternship = () => {
     return (
@@ -32,7 +33,9 @@ const AboutInternship = () => {
                             Присоединяйтесь к нам и ускорьте свое развитие в IT с BoostUp!{' '}
                         </h2>
                         <div className="pt-25">
-                            <button className="btn btn-square ">Регистрация</button>
+                            <Link to="registration">
+                                <button className="btn btn-square ">Регистрация</button>
+                            </Link>
                         </div>
                     </div>
                 </div>

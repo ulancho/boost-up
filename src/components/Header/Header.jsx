@@ -4,13 +4,16 @@ import logo from '../../assets/logo.svg';
 import communityPeopleSvg from '../../assets/communityPeople.svg';
 import communityPeopleJpg from '../../assets/communityPeople.jpg';
 import { ReactComponent as Rocket2 } from '../../assets/rocket.svg';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
         <header>
             <div className={`main-center-container ${styles.headerTop}`}>
                 <img src={logo} alt="logo" />
-                <button className="btn">Регистрация</button>
+                <Link to="registration">
+                    <button className="btn">Регистрация</button>
+                </Link>
             </div>
             <div className={`main-center-container ${styles.headerBottom}`}>
                 <div className={styles.titleBox}>
